@@ -1,0 +1,56 @@
+﻿<Page x:Class="Carsalon.ClientPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Carsalon"
+      mc:Ignorable="d" 
+      d:DesignHeight="455" d:DesignWidth="600"
+      Title="ClientPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Grid.ColumnSpan="2">Редактирование покупателя</TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="0">Фамилия</TextBlock>
+        <TextBlock Grid.Row="2" Grid.Column="0">Имя</TextBlock>
+        <TextBlock Grid.Row="3" Grid.Column="0">Отчество</TextBlock>
+        <TextBlock Grid.Row="4" Grid.Column="0">Паспорт</TextBlock>
+        <TextBlock Grid.Row="5" Grid.Column="0">Адрес</TextBlock>
+        <TextBlock Grid.Row="6" Grid.Column="0">Город</TextBlock>
+        <TextBlock Grid.Row="7" Grid.Column="0">День рождение</TextBlock>
+        <TextBlock Grid.Row="8" Grid.Column="0">Пол</TextBlock>
+        
+        <TextBox Grid.Row="1" Grid.Column="1"></TextBox>
+        <TextBox Grid.Row="2" Grid.Column="1"></TextBox>
+        <TextBox Grid.Row="3" Grid.Column="1"></TextBox>
+        <TextBox Grid.Row="4" Grid.Column="1"></TextBox>
+        <TextBox Grid.Row="5" Grid.Column="1"></TextBox>
+        <TextBox Grid.Row="6" Grid.Column="1"></TextBox>
+        <DatePicker Grid.Row="7" Grid.Column="1"></DatePicker>
+        <ComboBox Grid.Row="8" Grid.Column="1">
+            <ComboBoxItem>
+                <TextBlock>Ж</TextBlock>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <TextBlock>М</TextBlock>
+            </ComboBoxItem>
+        </ComboBox>
+        <Button Grid.Column="0" Grid.Row="9">Отмена</Button>
+        <Button Grid.Column="1" Grid.Row="9">Сохранить</Button>
+    </Grid>
+</Page>

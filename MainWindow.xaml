@@ -1,0 +1,26 @@
+﻿<Window x:Class="Carsalon.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Carsalon"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="455" Width="700">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <Image Source="C:\Users\admin\Documents\ДИ-25 Стаценко\1.jpg"></Image>
+            <Button>Покупателям</Button>
+            <Button>Марки</Button>
+            <Button>Сотрудники</Button>
+            <Button>Автомобили</Button>
+            <Button>Продажи</Button>
+        </StackPanel>
+        <Frame Grid.Column="1" x:Name="frame">
+        </Frame>
+    </Grid>
+</Window>
