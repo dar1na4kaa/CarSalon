@@ -25,5 +25,30 @@ namespace Carsalon
             InitializeComponent();
             frame.Content = new MainPage();
         }
+
+        private void Client_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Content = new ClientPage();
+        }
+
+        private void Marks_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Content = new MarkPage();
+        }
+
+        private void Emp_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Content = new EmployeePage();
+        }
+
+        private void Cars_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Content = new AutoPage();
+        }
+
+        private void Sale_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Content = new SalePage();
+        }
     }
 }

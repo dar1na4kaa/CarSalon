@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Carsalon"
         mc:Ignorable="d"
-        Title="MainWindow" Height="455" Width="700">
+        Title="MainWindow" Height="460" Width="705">
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -14,11 +14,11 @@
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="0">
             <Image Source="C:\Users\admin\Documents\ДИ-25 Стаценко\1.jpg"></Image>
-            <Button>Покупателям</Button>
-            <Button>Марки</Button>
-            <Button>Сотрудники</Button>
-            <Button>Автомобили</Button>
-            <Button>Продажи</Button>
+            <Button Click="Client_Click">Покупателям</Button>
+            <Button Click="Marks_Click">Марки</Button>
+            <Button Click="Emp_Click">Сотрудники</Button>
+            <Button Click="Cars_Click">Автомобили</Button>
+            <Button Click="Sale_Click">Продажи</Button>
         </StackPanel>
         <Frame Grid.Column="1" x:Name="frame">
         </Frame>
