@@ -20,35 +20,43 @@ namespace Carsalon
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static Frame MainWindowFrame;
+
         public MainWindow()
         {
+
             InitializeComponent();
-            frame.Content = new MainPage();
+            MainWindowFrame = MainFrame;
         }
 
         private void Client_Click(object sender, RoutedEventArgs e)
         {
-            frame.Content = new ClientPage();
+
+            MainFrame.Content = new MainCleintPage();
         }
 
         private void Marks_Click(object sender, RoutedEventArgs e)
         {
-            frame.Content = new MarkPage();
+
+            MainFrame.Content = new MarkPage();
         }
 
         private void Emp_Click(object sender, RoutedEventArgs e)
         {
-            frame.Content = new EmployeePage();
+
+            MainFrame.Content = new EmployeePage();
         }
 
         private void Cars_Click(object sender, RoutedEventArgs e)
         {
-            frame.Content = new AutoPage();
+
+            MainFrame.Content = new AutoPage();
         }
 
         private void Sale_Click(object sender, RoutedEventArgs e)
         {
-            frame.Content = new SalePage();
+
+            MainFrame.Content = new SalePage();
         }
     }
 }

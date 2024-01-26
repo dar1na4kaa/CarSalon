@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Carsalon"
         mc:Ignorable="d"
-        Title="MainWindow" Height="460" Width="705">
+        Title="MainWindow" Height="600" Width="1100">
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -20,7 +20,7 @@
             <Button Click="Cars_Click">Автомобили</Button>
             <Button Click="Sale_Click">Продажи</Button>
         </StackPanel>
-        <Frame Grid.Column="1" x:Name="frame">
+        <Frame Grid.Column="1" x:Name="MainFrame" NavigationUIVisibility="Visible">
         </Frame>
     </Grid>
 </Window>

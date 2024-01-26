@@ -25,12 +25,12 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-        <TextBlock Grid.Row="0" Grid.ColumnSpan="2">Редактирование покупателя</TextBlock>
+        <TextBlock Text="{Binding Second_Name}" Grid.Row="0" Grid.ColumnSpan="2">Редактирование покупателя</TextBlock>
         <TextBlock Grid.Row="1" Grid.Column="0">Фамилия</TextBlock>
-        <TextBlock Grid.Row="2" Grid.Column="0">Имя</TextBlock>
+        <TextBlock Text="{Binding Name}" Grid.Row="2" Grid.Column="0">Имя</TextBlock>
         <TextBlock Grid.Row="3" Grid.Column="0">Отчество</TextBlock>
         <TextBlock Grid.Row="4" Grid.Column="0">Паспорт</TextBlock>
-        <TextBlock Grid.Row="5" Grid.Column="0">Адрес</TextBlock>
+        <TextBlock Text="{Binding Address}" Grid.Row="5" Grid.Column="0">Адрес</TextBlock>
         <TextBlock Grid.Row="6" Grid.Column="0">Город</TextBlock>
         <TextBlock Grid.Row="7" Grid.Column="0">День рождение</TextBlock>
         <TextBlock Grid.Row="8" Grid.Column="0">Пол</TextBlock>
@@ -51,6 +51,6 @@
             </ComboBoxItem>
         </ComboBox>
         <Button Grid.Column="0" Grid.Row="9">Отмена</Button>
-        <Button Grid.Column="1" Grid.Row="9">Сохранить</Button>
+        <Button Grid.Column="1" Grid.Row="9" Click="Button_Click">Сохранить</Button>
     </Grid>
 </Page>
