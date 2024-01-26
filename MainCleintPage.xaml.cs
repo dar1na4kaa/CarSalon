@@ -16,18 +16,23 @@ using System.Windows.Shapes;
 namespace Carsalon
 {
     /// <summary>
-    /// Логика взаимодействия для ClientPage.xaml
+    /// Логика взаимодействия для MainCleintPage.xaml
     /// </summary>
-    public partial class ClientPage : Page
+    public partial class MainCleintPage : Page
     {
-        public ClientPage()
+        public MainCleintPage()
         {
             InitializeComponent();
+            DGridClients.ItemsSource = AutoRoomEntities.GetContext().Customers.ToList();    
 
-            
         }
 
-        private void Save_Click(object sender, RoutedEventArgs e)
+        private void Add_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow.MainWindowFrame.Content = new ClientPage();
+        }
+
+        private void Delete_Click(object sender, RoutedEventArgs e)
         {
 
         }
